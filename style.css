@@ -1,4 +1,6 @@
-/* Reset & Body Styling */
+/* ========================
+   Global Styles
+======================== */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -7,50 +9,35 @@ body {
   color: #333;
   line-height: 1.6;
 }
-.download-btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #3498db;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
 
-.download-btn:hover {
-  background-color: #217dbb;
-}
-
-
-/* Header Styling - Centered Layout */
+/* ========================
+   Header Section
+======================== */
 .centered-header {
   background-color: #2d3e50;
   color: white;
   text-align: center;
-  padding: 1rem 1rem;
+  padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Profile Image */
 .profile-img {
   width: 135px;
   height: 160px;
-  border-radius: 45%;
+  border-radius: 10px; /* Changed from 45% to 10px for a more square shape */
   object-fit: cover;
   border: 4px solid white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 1rem;
-image-rendering: auto;
-image-rendering: crisp-edges;
-
+  image-rendering: auto;
 }
 
-/* Name */
+/* ========================
+   Header Text
+======================== */
 header h1 {
   margin: 0.2rem 0;
   font-size: 2rem;
@@ -58,14 +45,15 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* Job Title */
 header p {
   margin: 0;
   font-size: 1.1rem;
   color: #ccc;
 }
 
-/* Sections */
+/* ========================
+   Section Styling
+======================== */
 section {
   padding: 2rem 10%;
 }
@@ -81,7 +69,9 @@ section p {
   margin-bottom: 1rem;
 }
 
-/* Skills Section */
+/* ========================
+   Skills Section
+======================== */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -99,12 +89,86 @@ section p {
   font-size: 0.9rem;
 }
 
-/* Footer */
+/* ========================
+   Project Section
+======================== */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  font-size: 1.4rem;
+  color: #2d3e50;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 0.5rem;
+}
+
+.project ul {
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* ========================
+   Contact Section
+======================== */
+#contact {
+  padding: 2rem 10%;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin: 0.7rem 0;
+}
+
+.contact-info a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Resume Button
+======================== */
+.download-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #217dbb;
+}
+
+/* ========================
+   Footer
+======================== */
 footer {
   background-color: #2d3e50;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
-
